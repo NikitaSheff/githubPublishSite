@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мой сайт с рекламой</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main>
+  <h1>Добро пожаловать!</h1>
+  <p>Здесь размещена рекламная зона:</p>
+
+  <!-- Рекламный блок (ОБЯЗАТЕЛЬНО до скрипта) -->
+  <div id="b8b4b7-f7970f-5591" class="b8b4b7-f7970f ad-zone"></div>
+</main>
+
+<!-- ⚠️ Единственный скрипт — строго после блока -->
+<script>
+  (function(o, c, t, l, i) {
+    for (i = 0; i < o.scripts.length; i++) {
+      if (o.scripts[i].src === c) return;
+    }
+    l = o.createElement("script");
+    l.src = c + "?" + Date.now();
+    l.setAttribute("async", "");
+    l.setAttribute("data-id", t);
+    o.body.appendChild(l);
+  })(document, "https://sjs.bc-servers.me/lib.js", "b8b4b7-f7970f");
+</script>
+</body>
+</html>
